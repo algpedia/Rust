@@ -1,6 +1,8 @@
 pub fn bubble_sort(lista: &mut [i32]) {
   for i in 0..lista.len() {
     for j in i + 1..lista.len() {
+      // Compara o valor da posição i com todos os valores que estão à frente.
+      // Se o valor comparado é menor, troca o valor da posição i com o de posição j
       if lista[j] < lista[i] {
         troca(lista, i, j);
       }

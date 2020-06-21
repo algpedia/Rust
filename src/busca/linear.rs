@@ -1,10 +1,13 @@
 pub fn linear(_lista: &[i32], alvo: &i32) -> i32 {
+  // Verifica todos os elementos
   for (index, valor) in _lista.iter().enumerate() {
+    // Se o valor da posição for igual ao alvo, retorna o indíce
     if valor == alvo {
       return index as i32;
     }
   }
 
+  // Caso valor não tenha sido encontrado, retorna -1
   return -1;
 }
 
